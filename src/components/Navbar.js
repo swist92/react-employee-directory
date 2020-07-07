@@ -1,45 +1,28 @@
 import React from "react";
+import SearchBox from "./SearchBox";
+import FetchUser from "./FetchUser";
 
 function Navbar(props) {
+  
+  
+  
+
+
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
-      <a className="navbar-brand" href="#">
-        Navbar
-      </a>
-      <button
-        className="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNavAltMarkup"
-        aria-controls="navbarNavAltMarkup"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span className="navbar-toggler-icon"></span>
-      </button>
-      <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div className="navbar-nav">
-          <a className="nav-item nav-link active" href="#">
-            Home <span className="sr-only">(current)</span>
-          </a>
-          <a className="nav-item nav-link" href="#">
-            Features
-          </a>
-          <a className="nav-item nav-link" href="#">
-            Pricing
-          </a>
-          <a
-            className="nav-item nav-link disabled"
-            href="#"
-            tabindex="-1"
-            aria-disabled="true"
-          >
-            Disabled
-          </a>
-        </div>
-      </div>
-    </nav>
+    <div>
+      <nav className="navbar navbar-expand-lg navbar-light bg-light text-center">
+        <h1 className="navbar-brand">Employee Directory</h1>
+        <h6>
+          Click on carrots to filter by heading or use the search box to narrow
+          your results.
+        </h6>
+      </nav>
+      <SearchBox />
+      <FetchUser />
+    </div>
   );
 }
+
+
 
 export default Navbar;
