@@ -6,8 +6,8 @@ import FetchUser from "./FetchUser";
 function Navbar(props) {
   return (
     <div>
-      <nav className="navbar navbar-expand-lg navbar-light bg-light text-center">
-        <h1 className="navbar-brand">Employee Directory</h1>
+      <nav className="navbar navbar-expand-lg navbar-dark bg-dark text-white text-center">
+        <h1 className="navbar-brand text-white">Employee Directory</h1>
         <h6>
           Click on carrots to filter by heading or use the search box to narrow
           your results.

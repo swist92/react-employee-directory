@@ -4,7 +4,7 @@ import Moment from "moment";
 class FetchUser extends Component {
   state = {
     loading: true,
-    employees: [],
+    results: [],
   };
 
   async componentDidMount() {
@@ -12,7 +12,7 @@ class FetchUser extends Component {
     const response = await fetch(url);
     const data = await response.json();
 
-    this.setState({ employees: data.results, loading: false });
+    this.setState({ results: data.results, loading: false });
     console.log(data);
   }
 
