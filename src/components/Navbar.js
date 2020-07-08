@@ -1,13 +1,9 @@
 import React from "react";
 import SearchBox from "./SearchBox";
 import FetchUser from "./FetchUser";
+// import Moment from "moment";
 
 function Navbar(props) {
-  
-  
-  
-
-
   return (
     <div>
       <nav className="navbar navbar-expand-lg navbar-light bg-light text-center">
@@ -22,7 +18,5 @@ function Navbar(props) {
     </div>
   );
 }
-
-
 
 export default Navbar;
